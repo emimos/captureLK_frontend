@@ -9,8 +9,6 @@ function App() {
           <CssBaseline />
             <div className="body-lay-out">
                 <Appbar/>
-
-
             </div>
       </ThemeProvider>
 

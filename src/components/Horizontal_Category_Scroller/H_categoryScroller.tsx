@@ -10,7 +10,6 @@ import beach_image from '../../assets/images/header-categories/13.jpg';
 import theme from "../../Theme";
 import {orange} from "@mui/material/colors";
 
-
 const HCategoryScroller = () => {
     const scrollerRef = useRef<HTMLDivElement | null>(null);
     const [canScrollRight, setCanScrollRight] = useState(false);
