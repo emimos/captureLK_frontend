@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ysabeau+Infant:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+*{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.body-lay-out{
+    width: 100vw;
+    min-width: 100%;
+}
+
+.appbar-logo{
+    padding-top:5px ;
+    padding-bottom: 5px;
+}
+
+.horizontal-category-scroller-wrapper {
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    gap: 20px;
+    border-top: 2px solid #F8F9F9;
+    text-align: center;
+
+}
+
+.wrapper-box-inline{
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.wrapper-box-inline-btn{
+   padding-top: 22px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+
+.horizontal-category-scroller-box {
+    width: 100%;
+    overflow-x: hidden; /* Hide the horizontal scrollbar */
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-category-scroller-box-item-block {
+    display: inline-flex; /* Use flexbox to control gaps */
+    gap: 30px; /* Set the desired gap between items */
+    align-items: center; /* Vertically align items */
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto; /* Add scrolling for smaller screens */
+    -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-category-scroller-box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.image-categories {
+    width: 32px;
+    height: 32px;
+}
+
+.text-category {
+    margin-top: 5px; /* Add some space between image and text */
+    color: #242424;
+}
+
+@media (max-width: 768px) {
+    .horizontal-category-scroller-box-item {
+        width: 40px; /* Adjust the size for smaller screens */
+        height: 40px;
+        margin-right: 8px;
+    }
+}
+
+/* #F8F9F9 - gray */
+
+
